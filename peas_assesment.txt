@@ -1,0 +1,19 @@
+Performance measure:
+	The performance on this ai is going to be based upon how good a move the ai can make down the road. The farther down the adversarial tree it can go the better. The rewards for each move will be based upon the reward it is granted. For example if the king is taken it would have a - high number reward as that is the worst possible outcome to this game. On the other hand it could be a positive high number reward as that would be the best outcome of the game. I will additionally make a reward for all other captures and to help the chess ai i will give it certain opening moves and game strategies as rewards so it can play better.
+Checkmate +1000
+Queen capture +800
+Check +100
+Pawn promotion +800
+…
+…
+Pawn capture +100
+
+Environment:
+	The environment will be set up using a petting zoo and the game will be created by myself using petting zoos built in features. I will have a model class that will help build the game and be used as the model class for my chess ai as to kill two birds with one stone
+
+Actions:
+	The actions available to the player are going to be every possible position a certain character can take. For example the player could place any of the pawns forward so long as it's a valid move, or they could move their queen. So long as a chess piece can move, its actions will consist of the spot it can move to. The action taken will be determined by an adversarial search using alpha beta pruning to decide the best possible action.
+
+Sensors(percepts):
+	The sensors given to the agent are going to just be the board itself and where everything on the board will be. It will have to update itself constantly each turn as it won't know what the player is going to do, but it will see what the player did after they have done it.
+
